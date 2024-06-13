@@ -1,6 +1,10 @@
 <input id="num1" >
 <input id="num2" >
 <button onclick="change()">Add</button>
+<button onclick="change1()">Subtract</button>
+<button onclick="change2()">Multiply</button>
+<button onclick="change3()">Divide</button>
+<button onclick="change4()">Remainder</button>
 <p id="result">Result</p>
 
 <script>
@@ -15,4 +19,33 @@
         console.log(total)
         result1.textContent=total
     }
+    function change1(){
+        var box1value= Number(box1.value)
+        var box2value= Number(box2.value)
+        var total= Number(box1value- box2value)
+        console.log(total)
+        result1.textContent=total
+    }
+    function change2(){
+        var box1value= Number(box1.value)
+        var box2value= Number(box2.value)
+        var total= Number(box1value* box2value)
+        console.log(total)
+        result1.textContent=total
+    }
+    function change3(){
+        var box1value= Number(box1.value)
+        var box2value= Number(box2.value)
+        var total= Number(box1value/box2value)
+        console.log(total)
+        result1.textContent=total
+    }
+    function change4(){
+        var box1value=Number(box1.value)
+        var box2value=Number(box2.value)
+        var total=Number(box1value%box2value)
+        console.log(total)
+        result1.textContent=total
+    }
+    
 </script>
